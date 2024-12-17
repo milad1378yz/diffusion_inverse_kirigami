@@ -1,0 +1,3 @@
+[submodule "modules/quartet"]
+	path = modules/quartet
+	url = https://github.com/crawforddoran/quartet.git
