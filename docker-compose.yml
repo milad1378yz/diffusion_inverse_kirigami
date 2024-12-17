@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  monai_env:
+    image: projectmonai/monai:1.4.0rc12
+    volumes:
+      - ./:/app
+    runtime: nvidia
+    environment:
+      - NVIDIA_VISIBLE_DEVICES=all
+      - NVIDIA_DRIVER_CAPABILITIES=all
+    command: tail -f /dev/null
+    shm_size: '1gb'
